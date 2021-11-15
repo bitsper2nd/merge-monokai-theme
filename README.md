@@ -1,8 +1,8 @@
-# Theme - Monokai
+# Theme - Monokai Plus
 
 [Monokai](https://monokai.pro) theme for Sublime Merge 2.
 
-Requires related color scheme. The color scheme is from the Sublime Text's [Monokai Pro Theme](https://packagecontrol.io/packages/Theme%20-%20Monokai%20Pro).
+Requires [related color](https://github.com/bitsper2nd/sublime-monokai-scheme) scheme. This implementation of Monokai uses the Sublime Merge Dark Theme as a template with the Monokai color palette.
 
 ## Install
 
