@@ -12,3 +12,10 @@ folder as `Monokai Theme`. Edit your merge `Preferences.sublime-settings` file t
 ```js
     "theme": "Monokai Plus.sublime-theme"
 ```
+
+## Screenshots
+
+![machine](screenshots/machine.PNG)
+![octagon](screenshots/octagon.PNG)
+![ristretto](screenshots/ristretto.PNG)
+![spectrum](screenshots/spectrum.PNG)
