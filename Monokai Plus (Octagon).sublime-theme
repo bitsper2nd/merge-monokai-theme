@@ -28,9 +28,9 @@
 
         // Header
         "title_bar_style": "dark",
-        "header_bg": "var(--background)",
+        "header_bg": "color(var(--background) l(+ 10%))",
         "header_fg": "var(text-heading)",
-        "header_button_bg": "color(var(--background) l(25%))",
+        "header_button_bg": "var(--background)",
         "icon_button_fg": "white",
 
         "info_shadow": "color(black a(0.2))",
@@ -188,8 +188,8 @@
         "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "var(--background)",
-        "tab_separator_bg": "var(--background)",
+        "tab_bar_bg": "color(var(--background) l(+ 7%))",
+        "tab_separator_bg": "color(var(--background) l(+ 20%))",
 
         // Radio buttons
         "radio_back": "var(--background)",
@@ -240,8 +240,8 @@
         "console_border": "color(var(--background) l(+ 10%))",
 
         // Tabs
-        "repository_tab_bar_bg": "var(--background)",
-                "repository_tab_bar_border_bg": "var(--background)",
+        "repository_tab_bar_bg": "color(var(--background) l(+ 3%))",
+        "repository_tab_bar_border_bg": "color(var(--background) l(+ 30%))",
         "file_badge_created_fg": "var(green)",
         "file_badge_deleted_fg": "var(pink)",
         "file_badge_modified_fg": "var(orange)",
@@ -266,24 +266,25 @@
         //     "bg": "var(--background)",
         //     "settings": ["themed_title_bar"],
         // },
-        // {
-        //     "class": "tab_control",
-        //     "layer3.opacity": 0.0,
-        //     "layer2.opacity": 0.0,
-        //     "layer2.draw_center": false,
-        //     "layer2.inner_margin": [0, 0, 0, 1],
-        //     "layer2.tint": "var(--accent)"
-        // },
+        {
+            "class": "tab_control",
+            "attributes": ["dirty"],
+            "layer2.opacity": 1.0,
+            "layer2.draw_center": false,
+            "layer2.inner_margin": [0, 0, 0, 2.5],
+            "layer2.tint": "var(--accent)",
+        },
         // {
         //     "class": "tab_control",
         //     "attributes": ["hover"],
         //     "layer2.opacity": 0.5
         // },
-        // {
-        //     "class": "tab_control",
-        //     "attributes": ["selected"],
-        //     "layer2.opacity": 1.0
-        // },
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer2.inner_margin": [0, 2.5, 0, 0],
+
+        },
         // // File Tabs
         // {
         //     "class": "tab_separator",
