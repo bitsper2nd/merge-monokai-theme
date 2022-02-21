@@ -101,7 +101,7 @@
         "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
 
         // Location Bar
-        "side_bar_container_bg": "var(--background)",
+        "side_bar_container_bg": "color(var(--background) l(+ 7%))",
 
         // Table of Contents
         "table_of_contents_bg": "color(var(--background) l(+ 3%))",
@@ -110,7 +110,7 @@
         "table_of_contents_row_bg": "color(var(--background) l(+ 30%))",
 
         // Detail panel
-        "detail_panel_bg": "var(--background)",
+        "detail_panel_bg": "color(var(--background) l(+ 3%))",
         "field_name_fg": "var(text)",
         "author_fg": "color(var(white) a(0.4))",
         "terminator_fg": "var(text)",
@@ -188,8 +188,8 @@
         "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "color(var(--background) l(+ 7%))",
-        "tab_separator_bg": "color(var(--background) l(+ 30%))",
+        "tab_bar_bg": "color(var(--background) l(+ 10%))",
+        "tab_separator_bg": "color(var(--background) l(+ 20%))",
 
         // Radio buttons
         "radio_back": "var(--background)",
@@ -268,22 +268,20 @@
         // },
         {
             "class": "tab_control",
-            "attributes": ["dirty"],
-            "layer2.opacity": 1.0,
-            "layer2.draw_center": false,
-            "layer2.inner_margin": [0, 0, 0, 2.5],
-            "layer2.tint": "var(--accent)",
-        },
-        // {
-        //     "class": "tab_control",
-        //     "attributes": ["hover"],
-        //     "layer2.opacity": 0.5
-        // },
-        {
-            "class": "tab_control",
-            "attributes": ["selected"],
-            "layer2.inner_margin": [0, 2.5, 0, 0],
-
+            "settings": {"file_tab_style": ["", "rounded"]},
+            "layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
+            "layer0.inner_margin": [12, 0, 12, 0],
+            // "layer0.opacity": 1.0,
+            "layer1.texture": "Theme - Default/common/tab_rounded.png",
+            "layer1.inner_margin": [12, 0, 12, 0],
+            // "layer1.opacity": 1.0,
+            "layer2.texture": "Theme - Default/common/tab_rounded_highlight.png",
+            "layer2.inner_margin": [12, 0, 12, 0],
+            // "layer2.opacity": 0.0,
+            "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
+            "layer3.inner_margin": [7, 0, 7, 0],
+            "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+            "content_margin": [16, 5, 11, 4],
         },
         // // File Tabs
         // {
@@ -307,7 +305,7 @@
         // {
         //     "class": "tab",
         //     "attributes": ["selected"],
-        //     "layer2.opacity": 1.0
+        //     "layer0.tint": "color(var(--background) l(+ 3%))"
         // },
         {
             "class": "overlay_container_control",
@@ -769,7 +767,6 @@
             ],
             "layer0.texture": "Theme - Default/common/folder_open.png",
             "layer0.opacity": 1,
-            // "layer0.tint": "var(--accent)"
         },
         {
             "class": "icon_folder",
@@ -798,6 +795,36 @@
             ],
             "layer0.opacity": 0.6,
             "layer0.tint": "var(white)"
-        }
+        },
+
+        {
+            "class": "icon_folder",
+            "parents": [
+                {
+                    "class": "tab_control",
+                    "attributes": [
+                        "dirty",
+                        "selected"
+                    ]
+                }
+            ],
+            "layer0.texture": "Theme - Default/common/folder_open.png",
+            "layer0.opacity": 1,
+            "layer0.tint": "var(--accent)"
+        },
+
+        {
+            "class": "icon_folder",
+            "parents": [
+                {
+                    "class": "tab_control",
+                    "attributes": [
+                        "dirty"
+                    ]
+                }
+            ],
+            "layer0.opacity": 1,
+            "layer0.tint": "var(--accent)"
+        },
     ]
 }
