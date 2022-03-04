@@ -28,7 +28,7 @@
 
         // Header
         "title_bar_style": "dark",
-        "header_bg": "color(var(--background) l(+ 7%))",
+        "header_bg": "color(var(--background) l(+ 10%))",
         "header_fg": "var(text-heading)",
         "header_button_bg": "var(--background)",
         "icon_button_fg": "white",
@@ -188,7 +188,7 @@
         "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "color(var(--background) l(+ 7%))",
+        "tab_bar_bg": "color(var(--background) l(+ 10%))",
         "tab_separator_bg": "color(var(--background) l(+ 20%))",
 
         // Radio buttons
@@ -290,7 +290,7 @@
            "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
            "layer3.inner_margin": [7, 0, 7, 0],
            "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-           "content_margin": [16, 5, 11, 4],
+           "content_margin": [12, 0, 12, 0],
         },
         {
             "class": "overlay_container_control",
