@@ -28,7 +28,7 @@
 
         // Header
         "title_bar_style": "dark",
-        "header_bg": "color(var(--background) l(+ 10%))",
+        "header_bg": "color(var(--background) l(+ 7%))",
         "header_fg": "var(text-heading)",
         "header_button_bg": "var(--background)",
         "icon_button_fg": "white",
@@ -101,7 +101,7 @@
         "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
 
         // Location Bar
-        "side_bar_container_bg": "color(var(--background) l(+ 7%))",
+        "side_bar_container_bg": "color(var(--background) l(+ 3%))",
 
         // Table of Contents
         "table_of_contents_bg": "color(var(--background) l(+ 3%))",
@@ -144,10 +144,10 @@
         "hunk_button_fg": "white",
         "hunk_button_shadow": "color(black a(0.5))",
 
-        "file_header_bg": "color(var(--background) l(+ 5%))",
+        "file_header_bg": "color(var(--background) l(+ 3%))",
         "file_header_bg-hover": "color(var(--background) l(+ 10%))",
 
-        "hunk_header_bg": "color(var(--background) l(+ 12%))",
+        "hunk_header_bg": "color(var(--background) l(+ 7%))",
 
         "deleted_icon_fg": "var(text)",
         "deleted_header_bg": "var(dark_red)",
@@ -188,7 +188,7 @@
         "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "color(var(--background) l(+ 10%))",
+        "tab_bar_bg": "color(var(--background) l(+ 7%))",
         "tab_separator_bg": "color(var(--background) l(+ 20%))",
 
         // Radio buttons
