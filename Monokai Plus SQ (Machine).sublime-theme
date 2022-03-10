@@ -1,0 +1,6 @@
+{
+    "name": "Monokai Plus SQ (Machine)",
+    "extends": "Monokai Plus SQ.hidden-theme",
+    "variables": {},
+    "rules": []
+}

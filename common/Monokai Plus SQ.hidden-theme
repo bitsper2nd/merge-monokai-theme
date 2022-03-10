@@ -101,7 +101,7 @@
         "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
 
         // Location Bar
-        "side_bar_container_bg": "color(var(--background) l(+ 3%))",
+        "side_bar_container_bg": "color(var(--background) l(+ 7%))",
 
         // Table of Contents
         "table_of_contents_bg": "color(var(--background) l(+ 3%))",
@@ -266,32 +266,6 @@
         //     "bg": "var(--background)",
         //     "settings": ["themed_title_bar"],
         // },
-        // Tabs
-        {
-            "class": "tab_control",
-            "settings": {"file_tab_style": ["", "rounded"]},
-            "layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
-            "layer0.inner_margin": [12, 0, 12, 0],
-            "layer1.texture": "Theme - Default/common/tab_rounded.png",
-            "layer1.inner_margin": [12, 0, 12, 0],
-            "layer2.texture": "Theme - Default/common/tab_rounded_highlight.png",
-            "layer2.inner_margin": [12, 0, 12, 0],
-            "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-            "layer3.inner_margin": [7, 0, 7, 0],
-            "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-            "content_margin": [16, 5, 11, 4],
-        },
-        // File Tabs
-        {
-           "class": "tab",
-           "settings": {"file_tab_style": ["", "rounded"]},
-           "layer0.texture": "Theme - Default/common/tab_rounded.png",
-           "layer0.inner_margin": [12, 0, 12, 0],
-           "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-           "layer3.inner_margin": [7, 0, 7, 0],
-           "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-           "content_margin": [12, 0, 12, 0],
-        },
         {
             "class": "overlay_container_control",
             "layer0.opacity": 0.6,
