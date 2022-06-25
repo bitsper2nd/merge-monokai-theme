@@ -347,12 +347,14 @@
         },
         {
             "class": "tool_tip_label_control",
-            "color": "var(--background)"
+            "color": "var(text-heading)",
+            "font.size": 12
         },
-        // {
-        //     "class": "tool_tip_control",
-        //     "layer0.tint": "color(var(--accent) s(50%) l(75%))"
-        // },
+        {
+            "class": "tool_tip_control",
+            "content_margin": [7, 4, 7, 4],
+            "layer0.tint": "var(--background)"
+        },
         {
             "class": "tab_close_button",
             "layer0.texture": "Theme - Default/common/tab_close.png",
