@@ -13,6 +13,8 @@ folder as `Monokai Theme`. Edit your merge `Preferences.sublime-settings` file t
     "theme": "Monokai Plus.sublime-theme"
 ```
 
+Or ```"theme": "Monokai Plus SQ.sublime-theme"``` for the square tabs version of this theme.
+
 ## Screenshots
 
 Monokai Plus (Machine)
@@ -36,6 +38,7 @@ Monokai Plus (Spectrum)
 Quickly switch between themes on Sublime Merge with the command palette:
 - Open a new file
 - Paste the following code:
+
 ```
 // Change Theme
     {
@@ -79,5 +82,6 @@ Quickly switch between themes on Sublime Merge with the command palette:
         },
     },
 ```
+
 - Save the file as `Default.sublime-commands` in `Sublime Merge/Packages/User` folder.
 - Open the command palette and type **Change**.

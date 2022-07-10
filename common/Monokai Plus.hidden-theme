@@ -67,11 +67,11 @@
         "commit_summary_fg-secondary": "var(text-light)",
         "commit_color_count": 8,
 
-        "commit_edge_0": "var(cyan)",
+        "commit_edge_0": "var(yellow)",
         "commit_edge_1": "var(purple)",
         "commit_edge_2": "var(pink)",
         "commit_edge_3": "var(orange)",
-        "commit_edge_4": "var(yellow)",
+        "commit_edge_4": "var(cyan)",
         "commit_edge_5": "var(green)",
         "commit_edge_6": "var(red)",
         "commit_edge_7": "var(blue)",
@@ -116,18 +116,18 @@
         "terminator_fg": "var(text)",
 
         "remote_ann_fg": "color(var(--background) a(0.7))",
-        "remote_ann_bg": "var(green)",
+        "remote_ann_bg": "var(yellow)",
 
         "stash_ann_fg": "var(text)",
         "stash_ann_bg": "color(var(white) a(20%))",
         "stash_ann_border": "color(var(white) a(50%))",
 
         "tag_ann_fg": "var(--background)",
-        "tag_ann_bg": "var(yellow)",
+        "tag_ann_bg": "var(cyan)",
         "tag_ann_opacity": 0.4,
 
-        "file_ann_fg": "var(text)",
-        "file_ann_bg": "color(var(white) a(0.2))",
+        "file_ann_fg": "var(--background)",
+        "file_ann_bg": "var(yellow)",
 
         "submodule_ann_fg": "var(text)",
         "submodule_ann_bg": "color(var(white) a(20%))",
