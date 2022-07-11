@@ -1,0 +1,894 @@
+{
+    "name": "Monokai Plus (Spectrum)",
+    "author": "Bitsper2nd",
+    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Monokai color palette (Monokai)",
+    "variables": {
+        // Static palette colors. These are constant through all variations.
+        "foreground": "hsl(266, 100%, 97%)", // #f7f1ff
+        "red": "hsl(343, 96%, 68%)", // #fc618d
+        "orange": "hsl(23, 98%, 66%)", // #fd9353
+        "yellow": "hsl(51, 96%, 69%)", // #fce566
+        "green": "hsl(133, 54%, 66%)", // #7bd88f
+        "cyan": "hsl(186, 71%, 69%)", // #78dce8
+        "blue": "hsl(188, 74%, 63%)", // #5ad4e6
+        "pink": "hsl(345, 100%, 69%)", // #ff79c6
+        "purple": "hsl(247, 61%, 72%)", // #948ae3
+        // Variant specific colors (change these for variants)
+        "background": "hsl(0, 0%, 13%)", // #222222
+        "selection": "hsl(270, 2%, 21%)", // #363537
+        "comment": "hsl(264, 2%, 41%)", // #69676c
+        "line-highlight": "color(var(foreground) a(5%))",
+        "accent": "var(yellow)",
+        // UI elements derived from color schemes
+        "caret": "var(foreground)",
+        "block-caret": "hsl(266, 3%, 55%)", // #8b888f
+        "highlight": "var(yellow)",
+        "shadow": "hsl(0, 0%, 0%)",
+        "stack": "var(selection)",
+        "darken": "hsl(264, 7%, 73%)", // #bab6c0
+        // Sublime has difficulty detecting purplish from bluish, etc.
+        // Define all colors to ensure correct colorish values.
+        "--redish": "var(red)",
+        "--orangeish": "var(orange)",
+        "--yellowish": "var(yellow)",
+        "--greenish": "var(green)",
+        "--cyanish": "var(cyan)",
+        "--bluish": "var(blue)",
+        "--pinkish": "var(pink)",
+        "--purplish": "var(purple)",
+    },
+    "globals": {
+        "accent": "var(accent)",
+        "active_guide": "var(stack)",
+        "background": "var(background)",
+        "block_caret": "var(block-caret)",
+        "bracket_contents_options": "underline",
+        "caret": "var(caret)",
+        "find_highlight": "var(highlight)",
+        "find_highlight_foreground": "var(background)",
+        "fold_marker": "var(yellow)",
+        "foreground": "var(foreground)",
+        "guide": "var(selection)",
+        "gutter": "var(background)",
+        "gutter_foreground": "color(var(selection) l(35%))",
+        "highlight": "var(comment)",
+        "inactive_selection": "var(selection)",
+        "invisibles": "color(var(selection) l(35%))",
+        "line_highlight": "var(line-highlight)",
+        "line_diff_width": "2",
+        "line_diff_added": "var(green)",
+        "line_diff_modified": "var(yellow)",
+        "line_diff_deleted": "var(red)",
+        "misspelling": "var(red)",
+        "selection": "var(selection)",
+        "selection_border": "var(selection)",
+        "selection_border_width": "1",
+        "selection_corner_style": "round",
+        "selection_corner_radius": "2",
+        "shadow": "color(var(shadow) alpha(0.25))",
+        "shadow_width": "0",
+        "stack_guide": "color(var(selection) l(35%))",
+        "tags_options": "stippled_underline"
+    },
+    "rules": [
+        {
+            "name": "Comments and overrides inside comments",
+            "scope": "comment, comment keyword, comment markup.underline.link, comment string, comment punctuation.definition, comment punctuation, comment text",
+            "font_style": "italic",
+            "foreground": "var(comment)"
+        },
+        {
+            "name": "JSDoc storage type",
+            "scope": "comment storage.type",
+            "foreground": "var(comment)"
+        },
+        {
+            "name": "JSDoc entity name",
+            "scope": "comment entity.name.type",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "JSDoc variable",
+            "scope": "comment variable, comment variable.other",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "Comment TODO / FIXME (at least in VSCode Python)",
+            "scope": "comment keyword.codetag.notation",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Git status remote",
+            "scope": "comment.git-status.header.remote",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Git status local",
+            "scope": "comment.git-status.header.local",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Git status remote",
+            "scope": "comment.other.git-status.head",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Docstring",
+            "scope": "string.quoted.docstring, string.quoted.docstring punctuation.definition",
+            "foreground": "var(comment)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant.other",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant.other.caps",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Placeholders in C",
+            "scope": "constant.other.placeholder.c",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Constant as property",
+            "scope": "constant.other.property",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant in latex",
+            "scope": "constant.other.citation.latex",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant as color (in css / sass)",
+            "scope": "constant.other.color",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant as character class escape (e.g. in regex)",
+            "scope": "constant.other.character-class.escape",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant as key (e.g. in puppet manifests)",
+            "scope": "constant.other.key",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant as symbol (e.g. in ruby)",
+            "scope": "constant.other.symbol",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Constants in elm",
+            "scope": "constant.other.elm",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant.language",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Character escape",
+            "scope": "constant.character.escape",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Search result line numbers",
+            "scope": "constant.numeric.line-number.find-in-files",
+            "foreground": "#525053"
+        },
+        {
+            "name": "Search result matched line numbes",
+            "scope": "constant.numeric.line-number.match.find-in-files",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Sections",
+            "scope": "entity.name.section",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Functions",
+            "scope": "entity.name.function, entity.name.function.templated",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Functions",
+            "scope": "entity.name.function.member.static",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Class template",
+            "scope": "entity.name.type.class.templated, entity.name.type.class.generic, entity.name.type.namespace",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "label",
+            "scope": "entity.name.label",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Macros",
+            "scope": "entity.name.function.preprocessor",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Constant name",
+            "scope": "entity.name.constant",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Namespace",
+            "scope": "entity.name.namespace",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag, entity.name.tag.js.jsx support.class.component.js.jsx, entity.name.tag support.class.component, source.vue support.class.component",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Operator",
+            "scope": "entity.name.function.operator",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Entity name type",
+            "scope": "entity.name.type, entity.name.type.class.reference, entity.name.type.class.value",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS class",
+            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.parent-selector-suffix.css, entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css, entity.other.attribute-name.css, entity.other.animation-name.css",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "CSS id",
+            "scope": "entity.other.attribute-name.id.css",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS pseudo class",
+            "scope": "entity.other.attribute-name.pseudo-class.css, entity.other.pseudo-class.css, entity.other.pseudo-element.css",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Function names / calls",
+            "scope": "entity.name.function, support.function",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "git status commit hex",
+            "scope": "entity.other.git-status.hex",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "jinja delimiters",
+            "scope": "entity.other.jinja2.delimiter",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "custom literal",
+            "scope": "entity.name.operator.custom-literal",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "custom literal string",
+            "scope": "entity.name.operator.custom-literal.string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "custom literal number",
+            "scope": "entity.name.operator.custom-literal.number",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "entity.name.type.rust",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "entity.name.lifetime.rust",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "font_style": "italic"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Control keywords examples include if, try, end and while. Some syntaxes prefer to mark if and else with the conditional variant. The import variant is often used in appropriate situations.",
+            "scope": "keyword.control",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "keyword control directive",
+            "scope": "keyword.control.directive",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator, keyword.operator.member, keyword.operator.new",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Substitution string",
+            "scope": "keyword.other.substitution",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Template literal begin / end",
+            "scope": "keyword.other.template.begin, keyword.other.template.end",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "RestructuredText heading, table markup",
+            "scope": "keyword.operator.heading.restructuredtext, keyword.operator.table.row.restructuredtext keyword.operator.table.data.restructuredtext",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "elm parenthesis",
+            "scope": "keyword.other.parenthesis.elm",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "keyword.other.fn.rust, keyword.other.rust, keyword.other.unsafe.rust, keyword.other.where.rust",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "keyword.control.rust, keyword.operator.misc.rust",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "ruby specific",
+            "scope": "keyword.declaration.class.ruby, keyword.declaration.function.ruby, keyword.declaration.namespace.ruby",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "Bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "Heading",
+            "scope": "markup.heading",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Raw",
+            "scope": "markup.raw",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Underline",
+            "scope": "markup.underline",
+            "font_style": "underline"
+        },
+        {
+            "name": "Link",
+            "scope": "markup.underline.link",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Diff inserted",
+            "scope": "markup.inserted, markup.inserted punctuation.definition.inserted",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Diff deleted",
+            "scope": "markup.deleted, markup.deleted punctuation.definition.deleted",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Diff changed",
+            "scope": "markup.changed, markup.changed punctuation.definition.changed",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "Diff ignored",
+            "scope": "markup.ignored, markup.ignored punctuation.definition.ignored",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Diff untracked",
+            "scope": "markup.untracked",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Markup quote",
+            "scope": "markup.quote",
+            "font_style": "italic"
+        },
+        {
+            "name": "Braces, delimiters",
+            "scope": "meta.brace.round, meta.brace.square, meta.brace.curly, meta.delimiter.comma.js, meta.function-call.without-arguments.js, meta.function-call.method.without-arguments.js",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Function call (vs)",
+            "scope": "meta.function-call.generic.python, support.function.builtin.python",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Function arguments (vs)",
+            "scope": "meta.function-call.python meta.function-call.arguments.python",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Constructor (new MyClass())",
+            "scope": "meta.instance.constructor",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Class string name (i.e. in html attributes)",
+            "scope": "meta.attribute-with-value.class string, meta.attribute.class.html string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "ID string name (i.e. in html attributes)",
+            "scope": "meta.attribute-with-value.id string, meta.attribute.id.html string",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "JSON keys",
+            "scope": "source.json meta.mapping.key string",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Object members",
+            "scope": "meta.object.member",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "SCSS Variable",
+            "scope": "meta.property-list.css variable.other",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Preprocessor",
+            "scope": "entity.name.constant.preprocessor, meta.preprocessor",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "git diff header",
+            "scope": "meta.diff.git-diff.header",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "rust specific (brackets and certain type names)",
+            "scope": "meta.type_params.rust",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "rust specific (variable.language.rust is 'self' keyword.",
+            "scope": "meta.attribute.rust, meta.annotation.rust, variable.language.rust, variable.annotation.rust, meta.annotation.rust string, meta.annotation.rust keyword, meta.annotation.rust keyword.operator, meta.attribute.rust string",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Punctuation tags",
+            "scope": "punctuation.definition.tag, punctuation.definition.tag source, punctuation.definition.group.begin.ruby, punctuation.definition.group.end.ruby, punctuation.definition.group.begin.css, punctuation.definition.group.end.css, punctuation.definition.string.end.html source.css",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Group (i.e. in regex)",
+            "scope": "punctuation.definition.group",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Comment start / end",
+            "scope": "punctuation.definition.comment",
+            "foreground": "var(comment)"
+        },
+        {
+            "name": "Variable indicator (i.e. in php or in include directives in sass)",
+            "scope": "punctuation.definition.variable, punctuation.definition.keyword.scss, punctuation.definition.entity.css",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+            "scope": "punctuation.section.embedded, punctuation.section.embedded entity.name.tag, punctuation.section.embedded constant.other, punctuation.section.embedded source, punctuation.section.embedded.begin",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Punctuation template string (`example`)",
+            "scope": "punctuation.template-string.element.begin, punctuation.template-string.element.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, string.quoted.template punctuation.definition.string.begin, string.quoted.template punctuation.definition.string.end, punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Punctuation hard line break in Markdown",
+            "scope": "meta.paragraph.markdown meta.dummy.line-break, meta.paragraph.markdown meta.hard-line-break.markdown",
+            "background": "var(purple)"
+        },
+        {
+            "name": "region red color",
+            "scope": "region.redish",
+            "foreground": "var(pink)",
+            "background": "var(--pinkish)"
+        },
+        {
+            "name": "region orange color",
+            "scope": "region.orangish",
+            "foreground": "var(orange)",
+            "background": "var(--orangeish)"
+        },
+        {
+            "name": "region yellow color",
+            "scope": "region.yellowish",
+            "foreground": "var(yellow)",
+            "background": "var(--yellowish)"
+        },
+        {
+            "name": "region green color",
+            "scope": "region.greenish",
+            "foreground": "var(green)",
+            "background": "var(--greenish)"
+        },
+        {
+            "name": "region blue color",
+            "scope": "region.bluish",
+            "foreground": "var(blue)",
+            "background": "var(--bluish)"
+        },
+        {
+            "name": "region purple color",
+            "scope": "region.purplish",
+            "foreground": "var(purple)",
+            "background": "var(--purplish)"
+        },
+        {
+            "name": "region pink color",
+            "scope": "region.pinkish",
+            "foreground": "var(pink)",
+            "background": "var(--pinkish)"
+        },
+        {
+            "name": "White for ST3 for non-colorized scheme",
+            "scope": "region.whitish",
+            "foreground": "hsl(0, 0%, 100%)"
+        },
+        {
+            "name": "source",
+            "scope": "source",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "SASS, SCSS default",
+            "scope": "source.scss, source.sass",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "SASS, SCSS and LESS variables",
+            "scope": "source.sass variable.other, source.sass variable.sass, source.scss variable.other, source.scss variable.scss, source.scss variable.sass, source.css variable.other, source.css variable.scss, source.less variable.other, source.less variable.other.less, source.less variable.declaration.less",
+            "font_style": "italic",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "git",
+            "scope": "source.git-show.commit.sha",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "git",
+            "scope": "source.git-show.author, source.git-show.date, source.git-diff.command, source.git-diff.command meta.diff.git-diff.header.from-file, source.git-diff.command meta.diff.git-diff.header.to-file",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "git diff header hash",
+            "scope": "source.git-show meta.diff.git-diff.header.extended.index.from-sha, source.git-show meta.diff.git-diff.header.extended.index.to-sha",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "git diff header range",
+            "scope": "source.git-show meta.diff.range.unified",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "git diff header files",
+            "scope": "source.git-show meta.diff.header.from-file, source.git-show meta.diff.header.to-file",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Types and definition / declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
+            "scope": "storage.type",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Extends",
+            "scope": "storage.type.extends",
+            "font_style": "normal",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Fat arrow function",
+            "scope": "storage.type.function.arrow",
+            "font_style": "normal",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
+            "scope": "storage.modifier, storage.type.modifier",
+            "font_style": "italic",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "refs (Restructured text)",
+            "scope": "storage.class.restructuredtext.ref",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "storage.modifier.visibility.rust, storage.modifier.lifetime.rust",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "storage.modifier.const.rust, storage.modifier.dyn.rust, storage.modifier.mut.rust, storage.modifier.static.rust, storage.type.rust, storage.type.core.rust, storage.class.std.rust",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "rust specific (adjust blue to red)",
+            "scope": "storage.type.rust, storage.modifier.const.rust, storage.modifier.dyn.rust, storage.modifier.mut.rust, storage.modifier.static.rust, keyword.other.rust, keyword.other.where.rust",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "String label",
+            "scope": "string.unquoted.label",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Source in template string",
+            "scope": "string source",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Embedded punctuation begin / end in template string",
+            "scope": "string source punctuation.section.embedded, string punctuation.definition.string source",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "link title",
+            "scope": "string.other.link.title, string.other.link.description",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "link description",
+            "scope": "string.other.link.description.title",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "String regexp begin / end",
+            "scope": "string.regexp punctuation.definition.string.begin, string.regexp punctuation.definition.string.end",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "refs (Restructured text)",
+            "scope": "string.other.ref, string.other.restructuredtext.ref",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "git key in git status help text",
+            "scope": "string.other.git-status.help.key",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "git status remote",
+            "scope": "string.other.git-status.remote",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Handlebars start / end",
+            "scope": "support.constant.handlebars",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "vendor prefix",
+            "scope": "support.type.vendor-prefix.css",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "Function name",
+            "scope": "support.function",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "function brackets, comma's",
+            "scope": "support.function.delimiter.elm",
+            "foreground": "var(block-caret)"
+        },
+        {
+            "name": "Library type",
+            "scope": "support.type, entity.name.type.object.console",
+            "font_style": "italic",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Support variables",
+            "scope": "support.variable",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Library type property, JSON keys",
+            "scope": "support.type.property-name",
+            "font_style": "normal",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Library class",
+            "scope": "support.class",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "rust specific",
+            "scope": "support.constant.core.rust",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "text",
+            "scope": "text",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Search result",
+            "scope": "text.find-in-files",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable, variable.other",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Function arguments",
+            "scope": "variable.parameter, parameters variable.function",
+            "font_style": "italic",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
+            "scope": "variable.language, variable.parameter.function.language.special.self.python, variable.parameter.function.language.special.cls.python",
+            "font_style": "italic",
+            "foreground": "var(darken)"
+        },
+        {
+            "name": "Reserved variable names: 'arguments'",
+            "scope": "variable.language.arguments",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Library function",
+            "scope": "variable.other.class",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "Immutable variables, often via a const modifier, should receive the following scope. Depending on the language and semantics, entity.name.constant may be a better choice.",
+            "scope": "variable.other.constant",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "read/write variables",
+            "scope": "variable.other.readwrite",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Fields, properties, members and attributes of a class or other data structure should use:",
+            "scope": "variable.other.member",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Enum member",
+            "scope": "variable.other.enummember",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Variable property",
+            "scope": "variable.other.property, variable.other.property.static, variable.other.event",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Function and method names should be scoped using the following, but only when they are being invoked. When defined, they should use entity.name.function.",
+            "scope": "variable.function",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Substitution (restructured text)",
+            "scope": "variable.other.substitution",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Ruby instance variables",
+            "scope": "source.ruby variable.other.readwrite.instance.ruby, source.ruby variable.other.readwrite.class.ruby",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "jinja2 variable block",
+            "scope": "source.jinja2 variable.other.jinja2.block",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "jinja2 variable",
+            "scope": "source.jinja2 variable.other.jinja2",
+            "foreground": "var(orange)"
+        }
+    ]
+}

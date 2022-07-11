@@ -2,7 +2,7 @@
 
 [Monokai](https://monokai.pro) theme for Sublime Merge 2.
 
-Requires [related color](https://github.com/bitsper2nd/sublime-monokai-scheme) scheme. This implementation of Monokai uses the Sublime Merge Theme as a template with the Monokai color palette.
+This implementation of Monokai uses the Sublime Merge Theme as a template with the Monokai color palette.
 
 ## Install
 
@@ -33,7 +33,7 @@ Monokai Plus (Spectrum)
 
 ![spectrum](screenshots/spectrum.png "Monokai Plus (Spectrum)")
 
-## Extra
+## Quick tip
 
 Quickly switch between themes on Sublime Merge with the command palette:
 - Open a new file
@@ -85,3 +85,7 @@ Quickly switch between themes on Sublime Merge with the command palette:
 
 - Save the file as `Default.sublime-commands` in `Sublime Merge/Packages/User` folder.
 - Open the command palette and type **Change**.
+
+## Extra
+
+Here is the repo of the [color scheme](https://github.com/bitsper2nd/sublime-monokai-scheme) for Sublime Text. Also checkout my [other theme](https://github.com/bitsper2nd/merge-mariana-theme) based on the Mariana color palette.
