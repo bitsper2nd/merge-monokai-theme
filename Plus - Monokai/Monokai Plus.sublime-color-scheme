@@ -889,6 +889,26 @@
             "name": "jinja2 variable",
             "scope": "source.jinja2 variable.other.jinja2",
             "foreground": "var(orange)"
+        },
+        {
+          "scope": "diff.deleted",
+          "background": "color(var(background) l(+ 3%)",
+          "foreground_adjust": "l(+ 5%)"
+        },
+        {
+          "scope": "diff.deleted.char",
+          "background": "color(var(red) a(30%))",
+          "foreground_adjust": "l(+ 10%)"
+        },
+        {
+          "scope": "diff.inserted",
+          "background": "color(var(background) l(+ 3%)",
+          "foreground_adjust": "l(+ 5%)"
+        },
+        {
+          "scope": "diff.inserted.char",
+          "background": "color(var(green) a(30%))",
+          "foreground_adjust": "l(+ 10%)"
         }
     ]
 }
