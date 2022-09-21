@@ -1,10 +1,10 @@
 {
-    "name": "Monokai Plus",
+    "name": "Monokai Plus Cognition",
     "author": "Bitsper2nd",
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Monokai color palette (Monokai)",
     "variables": {
         // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(60, 25%, 98%)", // #fcfcfa
+        "foreground": "hsl(173, 24%, 93%)", // #eaf2f1
         "red": "hsl(0, 100%, 67%)", // #ff5555
         "orange": "hsl(20, 96%, 70%)", // #fc9867
         "yellow": "hsl(45, 100%, 70%)", // #ffd866
@@ -14,8 +14,8 @@
         "pink": "hsl(345, 100%, 69%)", // #ff79c6
         "purple": "hsl(250, 77%, 78%)", // #ab9df2
         // Variant specific colors (change these for variants)
-        "background": "hsl(285, 5%, 17%)", // #2d2a2e
-        "selection": "hsl(280, 2%, 25%)", // #403e41
+        "background": "hsl(218.57, 14.286%, 19.216%)", // #2a2f38
+        "selection": "hsl(225, 15.385%, 25.49%)", // #373c4b
         "comment": "hsl(300, 1%, 44%)", // #727072
         "line-highlight": "color(var(foreground) a(5%))",
         "accent": "var(yellow)",

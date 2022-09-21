@@ -60,6 +60,7 @@
         "line_diff_modified": "var(yellow)",
         "line_diff_deleted": "var(red)",
         "misspelling": "var(red)",
+        "popup_css": "html {--background: var(background);--foreground: var(foreground);--redish: var(red);--orangish: var(orange);--yellowish: var(yellow);--greenish: var(green);--bluish: var(blue);--purplish: var(purple);--pinkish: var(pink); background-color: var(selection);color: var(foreground);} a {color: var(--yellowish);}",
         "selection": "var(selection)",
         "selection_border": "var(selection)",
         "selection_border_width": "1",
@@ -194,7 +195,7 @@
         {
             "name": "Search result line numbers",
             "scope": "constant.numeric.line-number.find-in-files",
-            "foreground": "#525053"
+            "foreground": "hsl(280, 1.8405%, 31.961%)"
         },
         {
             "name": "Search result matched line numbes",
@@ -208,13 +209,8 @@
         },
         {
             "name": "Functions",
-            "scope": "entity.name.function, entity.name.function.templated",
+            "scope": "entity.name.function, entity.name.function.templated, entity.name.function.member.static",
             "foreground": "var(green)"
-        },
-        {
-            "name": "Functions",
-            "scope": "entity.name.function.member.static",
-            "foreground": "var(foreground)"
         },
         {
             "name": "Class template",
@@ -342,7 +338,14 @@
         {
             "name": "Invalid",
             "scope": "invalid",
-            "font_style": "italic"
+            "foreground": "var(pink)",
+            "font_style": "italic underline"
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(orange)",
+            "font_style": "italic underline"
         },
         {
             "name": "Keyword",
