@@ -4,15 +4,15 @@
     "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Monokai color palette (Monokai)",
     "variables": {
         // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(173, 24%, 93%)", // #eaf2f1
-        "red": "hsl(0, 100%, 67%)", // #ff5555
-        "orange": "hsl(20, 96%, 70%)", // #fc9867
-        "yellow": "hsl(45, 100%, 70%)", // #ffd866
-        "green": "hsl(90, 59%, 66%)", // #a9dc76
-        "cyan": "hsl(186, 71%, 69%)", // #78dce8
-        "blue": "hsl(186, 71%, 69%)", // #78dce8
-        "pink": "hsl(345, 100%, 69%)", // #ff79c6
-        "purple": "hsl(250, 77%, 78%)", // #ab9df2
+        "foreground": "hsl(200, 5.2632%, 88.824%)", // #e1e3e4
+        "red": "hsl(0, 100%, 67%)", // #ff5757
+        "orange": "hsl(24.474, 89.412%, 66.667%)", // #f69c5e
+        "yellow": "hsl(46.119, 76.136%, 65.49%)", // #eacb64
+        "green": "hsl(93.83, 51.087%, 63.922%)", // #9dd274
+        "cyan": "hsl(194.24, 71.951%, 67.843%)", // #72cce8
+        "blue": "hsl(194.24, 71.951%, 67.843%)", // #72cce8
+        "pink": "hsl(352.6, 100%, 69.804%)", // #ff6578
+        "purple": "hsl(260.69, 78.378%, 78.235%)", // #ba9cf3
         // Variant specific colors (change these for variants)
         "background": "hsl(218.57, 14.286%, 19.216%)", // #2a2f38
         "selection": "hsl(225, 15.385%, 25.49%)", // #373c4b
@@ -21,7 +21,7 @@
         "accent": "var(yellow)",
         // UI elements derived from color schemes
         "caret": "var(foreground)",
-        "block-caret": "hsl(300, 0%, 57%)", // #939293
+        "block-caret": "hsl(300, 0%, 57%)", // #e1e3e4
         "highlight": "var(yellow)",
         "shadow": "hsl(0, 0%, 0%)",
         "stack": "var(selection)",
@@ -894,24 +894,24 @@
             "foreground": "var(orange)"
         },
         {
-          "scope": "diff.deleted",
-          "background": "color(var(background) l(+ 3%)",
-          "foreground_adjust": "l(+ 5%)"
+            "scope": "diff.deleted",
+            "background": "color(var(background) l(+ 3%)",
+            "foreground_adjust": "l(+ 5%)"
         },
         {
-          "scope": "diff.deleted.char",
-          "background": "color(var(red) a(30%))",
-          "foreground_adjust": "l(+ 10%)"
+            "scope": "diff.deleted.char",
+            "background": "color(var(red) a(30%))",
+            "foreground_adjust": "l(+ 10%)"
         },
         {
-          "scope": "diff.inserted",
-          "background": "color(var(background) l(+ 3%)",
-          "foreground_adjust": "l(+ 5%)"
+            "scope": "diff.inserted",
+            "background": "color(var(background) l(+ 3%)",
+            "foreground_adjust": "l(+ 5%)"
         },
         {
-          "scope": "diff.inserted.char",
-          "background": "color(var(green) a(30%))",
-          "foreground_adjust": "l(+ 10%)"
+            "scope": "diff.inserted.char",
+            "background": "color(var(green) a(30%))",
+            "foreground_adjust": "l(+ 10%)"
         }
     ]
 }
