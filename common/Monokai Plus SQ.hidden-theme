@@ -388,6 +388,17 @@
             "class": "commit_table",
             "dark_content": true
         },
+        // Scroll track control
+        {
+            "class": "scroll_bar_control",
+            "parents": [{"class": "switch_project_window"}],
+            "layer0.tint": "var(--background)",
+        },
+        {
+            "class": "puck_control",
+            "parents": [{"class": "switch_project_window"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        },
         {
             "class": "scroll_track_control",
             "parents": [{"class": "commit_table_container"}],
