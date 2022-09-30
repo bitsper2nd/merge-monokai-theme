@@ -60,7 +60,6 @@
         "line_diff_modified": "var(yellow)",
         "line_diff_deleted": "var(red)",
         "misspelling": "var(red)",
-        "popup_css": "html {--background: var(background);--foreground: var(foreground);--redish: var(red);--orangish: var(orange);--yellowish: var(yellow);--greenish: var(green);--bluish: var(blue);--purplish: var(purple);--pinkish: var(pink); background-color: var(selection);color: var(foreground);} a {color: var(--yellowish);}",
         "selection": "var(selection)",
         "selection_border": "var(selection)",
         "selection_border_width": "1",
