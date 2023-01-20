@@ -497,6 +497,11 @@
             "foreground": "var(foreground)"
         },
         {
+            "name": "YAML keys",
+            "scope": "source.yaml meta.mapping.key string",
+            "foreground": "var(pink)"
+        },
+        {
             "name": "Object members",
             "scope": "meta.object.member",
             "foreground": "var(foreground)"
