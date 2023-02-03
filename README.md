@@ -54,54 +54,56 @@ Quickly switch between themes on Sublime Merge with the command palette:
 
 ```
 // Change Theme
-    {
-        "caption": "Change Theme: Cognition",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus (Cognition).sublime-theme"
+    [
+        {
+            "caption": "Change Theme: Cognition",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus (Cognition).sublime-theme"
+            },
         },
-    },
-    {
-        "caption": "Change Theme: Machine",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus (Machine).sublime-theme"
+        {
+            "caption": "Change Theme: Machine",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus (Machine).sublime-theme"
+            },
         },
-    },
-    {
-        "caption": "Change Theme: Octagon",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus (Octagon).sublime-theme"
+        {
+            "caption": "Change Theme: Octagon",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus (Octagon).sublime-theme"
+            },
         },
-    },
-    {
-        "caption": "Change Theme: Plus",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus.sublime-theme"
+        {
+            "caption": "Change Theme: Monokai",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus.sublime-theme"
+            },
         },
-    },
-    {
-        "caption": "Change Theme: Ristretto",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus (Ristretto).sublime-theme"
+        {
+            "caption": "Change Theme: Ristretto",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus (Ristretto).sublime-theme"
+            },
         },
-    },
-    {
-        "caption": "Change Theme: Spectrum",
-        "command": "set_preference",
-        "args": {
-            "setting": "theme",
-            "value": "Monokai Plus (Spectrum).sublime-theme"
+        {
+            "caption": "Change Theme: Spectrum",
+            "command": "set_preference",
+            "args": {
+                "setting": "theme",
+                "value": "Monokai Plus (Spectrum).sublime-theme"
+            },
         },
-    },
+    ]
 ```
 
 - Save the file as `Default.sublime-commands` in `Sublime Merge/Packages/User` folder.
