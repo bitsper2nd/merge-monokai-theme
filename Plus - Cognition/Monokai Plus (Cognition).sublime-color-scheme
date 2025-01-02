@@ -532,6 +532,11 @@
             "foreground": "var(darken)"
         },
         {
+            "name": "type annotation",
+            "scope": "meta.type variable, meta.type variable.other.readwrite",
+            "foreground": "var(purple)"
+        },
+        {
             "name": "Punctuation",
             "scope": "punctuation",
             "foreground": "var(block-caret)"
@@ -570,6 +575,16 @@
             "name": "Punctuation hard line break in Markdown",
             "scope": "meta.paragraph.markdown meta.dummy.line-break, meta.paragraph.markdown meta.hard-line-break.markdown",
             "background": "var(purple)"
+        },
+        {
+            "name": "Punctuation in markdown links",
+            "scope": "markup.underline.link punctuation",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Meta braces",
+            "scope": "meta.brace.round, meta.brace.square, keyword.operator.type.annotation, meta.type storage.modifier.array",
+            "foreground": "var(block-caret)"
         },
         {
             "name": "region red color",
@@ -709,6 +724,11 @@
             "foreground": "var(pink)"
         },
         {
+            "name": "imported Java libraries",
+            "scope": "storage.modifier.import.java",
+            "foreground": "var(foreground)"
+        },
+        {
             "name": "String",
             "scope": "string",
             "foreground": "var(yellow)"
@@ -809,6 +829,11 @@
             "name": "rust specific",
             "scope": "support.constant.core.rust",
             "foreground": "var(purple)"
+        },
+        {
+            "name": "comment support",
+            "scope": "comment support, comment support.class",
+            "foreground": "var(comment)"
         },
         {
             "name": "text",
