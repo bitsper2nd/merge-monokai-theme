@@ -1,0 +1,6 @@
+{
+    "name": "Monokai Plus (Cognition)",
+    "extends": "Monokai Plus.hidden-theme",
+    "variables": {},
+    "rules": []
+}

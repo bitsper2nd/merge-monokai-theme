@@ -1,0 +1,6 @@
+{
+    "name": "Monokai Plus",
+    "extends": "Monokai Plus.hidden-theme",
+    "variables": {},
+    "rules": []
+}
