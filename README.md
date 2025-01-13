@@ -13,12 +13,6 @@ folder as `Monokai Theme`. Edit your merge `Preferences.sublime-settings` file t
     "theme": "Monokai Plus.sublime-theme"
 ```
 
-For the square tabs version of this theme:
-
-```
-    "theme": "Monokai Plus SQ.sublime-theme"
-```
-
 ## Screenshots
 
 Monokai Plus (Cognition)
