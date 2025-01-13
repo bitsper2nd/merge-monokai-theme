@@ -23,27 +23,27 @@ For the square tabs version of this theme:
 
 Monokai Plus (Cognition)
 
-![machine](screenshots/cognition.png "Monokai Plus (Cognition)")
+![cognition](https://github.com/user-attachments/assets/f1e57a8b-1c09-4382-a6a9-1649dadcb0b9 "Monokai Plus (Cognition)")
 
 Monokai Plus (Machine)
 
-![machine](screenshots/machine.png "Monokai Plus (Machine)")
+![machine](https://github.com/user-attachments/assets/2ef6fbc9-6498-4952-9ab2-b2b6e7d141d6 "Monokai Plus (Machine)")
 
 Monokai Plus (Octagon)
 
-![octagon](screenshots/octagon.png "Monokai Plus (Octagon)")
+![octagon](https://github.com/user-attachments/assets/b2893ef4-b92c-4a65-8c6b-270c804d7a91 "Monokai Plus (Octagon)")
 
 Monokai Plus
 
-![plus](screenshots/plus.png "Monokai Plus")
+![plus](https://github.com/user-attachments/assets/f203c40b-9433-4bd9-9d63-c886c9ce8fbd "Monokai Plus")
 
 Monokai Plus (Ristretto)
 
-![ristretto](screenshots/ristretto.png "Monokai Plus (Ristretto)")
+![ristretto](https://github.com/user-attachments/assets/185935b6-e114-4e1c-880d-5fdb5a6c8b9d "Monokai Plus (Ristretto)")
 
 Monokai Plus (Spectrum)
 
-![spectrum](screenshots/spectrum.png "Monokai Plus (Spectrum)")
+![spectrum](https://github.com/user-attachments/assets/ad41089c-b749-43e8-a2d8-1d0cca0600ec "Monokai Plus (Spectrum)")
 
 ## Quick tip
 
