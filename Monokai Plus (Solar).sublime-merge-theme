@@ -1,0 +1,6 @@
+{
+    "name": "Monokai Plus (Solar)",
+    "extends": "Monokai Plus Light.hidden-theme",
+    "variables": {},
+        "rules": []
+}
