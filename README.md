@@ -39,69 +39,11 @@ Monokai Plus (Spectrum)
 
 ![spectrum](https://github.com/user-attachments/assets/ad41089c-b749-43e8-a2d8-1d0cca0600ec "Monokai Plus (Spectrum)")
 
-## Quick tip
+Monokai Plus (Dawn)
+![dawn](https://github.com/user-attachments/assets/2ae33c63-c502-4ea5-9546-8404ff0442a7 "Monokai Plus (Dawn)")
 
-Quickly switch between themes on Sublime Merge with the command palette:
-
-- Open a new file
-- Paste the following code:
-
-```
-// Change Theme
-    [
-        {
-            "caption": "Change Theme: Cognition",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus (Cognition).sublime-theme"
-            },
-        },
-        {
-            "caption": "Change Theme: Machine",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus (Machine).sublime-theme"
-            },
-        },
-        {
-            "caption": "Change Theme: Octagon",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus (Octagon).sublime-theme"
-            },
-        },
-        {
-            "caption": "Change Theme: Monokai",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus.sublime-theme"
-            },
-        },
-        {
-            "caption": "Change Theme: Ristretto",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus (Ristretto).sublime-theme"
-            },
-        },
-        {
-            "caption": "Change Theme: Spectrum",
-            "command": "set_preference",
-            "args": {
-                "setting": "theme",
-                "value": "Monokai Plus (Spectrum).sublime-theme"
-            },
-        },
-    ]
-```
-
-- Save the file as `Default.sublime-commands` in `Sublime Merge/Packages/User` folder.
-- Open the command palette and type **Change**.
+Monokai Plus (Solar)
+![solar](https://github.com/user-attachments/assets/c621ce21-0fbb-4652-8404-7d6f54bc287d "Monokai Plus (Solar)")
 
 ## Extra
 
