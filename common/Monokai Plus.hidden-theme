@@ -58,7 +58,7 @@
         "location_bar_heading_fg": "var(text-heading)",
         "location_bar_heading_shadow": "black",
         "location_bar_row_bg-hover": "color(var(--background) l(+ 30%) a(0.25))",
-        "disclosure_fg": "var(text)",
+        "disclosure_fg": "var(text-heading)",
 
         // Commit list
         "commit_list_bg": "color(var(--background) l(+ 3%))",

@@ -39,7 +39,7 @@
         "location_bar_heading_fg": "var(text-heading)",
         "location_bar_heading_shadow": "color(black a(0.05))",
         "location_bar_row_bg-hover": "color(var(--background) l(- 8%) a(0.5))",
-        "disclosure_fg": "var(text)",
+        "disclosure_fg": "var(text-heading)",
         "commit_list_bg": "color(var(--background) l(- 2%))",
         "commit_row_bg-hover": "color(var(--background) l(- 5%) s(- 3%))",
         "commit_summary_fg-primary": "var(text-heading)",
