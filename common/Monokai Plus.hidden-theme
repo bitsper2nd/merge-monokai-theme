@@ -123,7 +123,7 @@
         "stash_ann_border": "color(var(white) a(50%))",
 
         "tag_ann_fg": "var(--background)",
-        "tag_ann_bg": "var(yellow)",
+        "tag_ann_bg": "var(green)",
         "tag_ann_opacity": 0.4,
 
         "file_ann_fg": "var(--background)",
@@ -843,5 +843,9 @@
             "layer0.opacity": 1,
             "layer0.tint": "var(--accent)"
         },
+        {
+            "class": "commit_summary_label",
+            "font.bold": true
+        }
     ]
 }
