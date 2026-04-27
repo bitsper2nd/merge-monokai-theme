@@ -10,7 +10,7 @@ Assuming the required color scheme is installed, git clone the project or downlo
 folder as `Monokai Theme`. Edit your merge `Preferences.sublime-settings` file to use the Monokai theme:
 
 ```
-    "theme": "Monokai Plus.sublime-theme"
+    "theme": "Monokai Plus.sublime-merge-theme"
 ```
 
 ## Screenshots
