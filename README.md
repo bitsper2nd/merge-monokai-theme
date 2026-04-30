@@ -6,8 +6,8 @@ This implementation of Monokai uses the Sublime Merge Theme as a template with t
 
 ## Install
 
-Assuming the required color scheme is installed, git clone the project or download it into your Sublime Merge `Packages`
-folder as `Monokai Theme`. Edit your merge `Preferences.sublime-settings` file to use the Monokai theme:
+Git clone the project or download it into your Sublime Merge `Packages` folder as `Monokai Theme`. 
+Edit your merge `Preferences.sublime-settings` file to use the Monokai theme:
 
 ```
     "theme": "Monokai Plus.sublime-merge-theme"
@@ -47,4 +47,5 @@ Monokai Plus (Solar)
 
 ## Extra
 
-Here is the repo of the [color scheme](https://github.com/bitsper2nd/sublime-monokai-scheme) for Sublime Text. Also checkout my [other theme](https://github.com/bitsper2nd/merge-mariana-theme) based on the Mariana color palette.
+Here is the repo of the [color scheme](https://github.com/bitsper2nd/sublime-monokai-scheme) for use with Sublime Text. Also checkout my [other theme](https://github.com/bitsper2nd/merge-mariana-theme) 
+based on the Mariana color palette.
